@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    *{
+    margin:0px 0px 0px ;
+  
+  }
+  .navbar{
+      height:59px;
+      background-color:#34c0eb;
+      display: flex;
+      align-items: center;
+      
+  
+  }
+  .home{
+    padding-left: 40px;
+    color:beige;
+    text-decoration: none;
+    font-size: 25px;
+  
+  }
+  .home:hover{
+     padding: 10px  20px;
+    color:black;
+    background-color:#ffffff;
+  
+  } 
+  .logo{
+    height:45px;
+    width:50px;
+    background: url('suraj_image_crop.jpg') no-repeat center center/cover;
+    border:2px solid white;
+    margin-left: 20px;
+    border-radius: 50%;
+  }
+  .logo:hover{
+    border:2px solid yellow;
+  }
+  .image{
+    height:550px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+  }
+  .image h1{
+    font-family: 'Bree Serif', serif;
+    color: #ffffff;
+    padding-top: 135px;
+  }
+  .image p{
+    margin-top:22px;
+    color:white;
+    font-family: 'Bree Serif', serif;
+    font-size:1.3rem;
+  }
+  .button{
+   padding: 6px 20px;
+   border: 2px solid white;
+   background-color:#A52A2A;
+   color: white;
+   margin: 17px;
+   font-size: 1.5rem;
+   border-radius: 10px;
+   cursor:pointer;
+   margin-top: 22px;
+  }
+  .image::before{
+    content:"";
+    position: absolute;
+    height:550px;
+    width:100%;
+    background: url('bg1.jpg') no-repeat center center/cover ;
+    z-index: -1;
+  }
+  
+  .button:hover{
+    background-color:#d1b40d;
+  }
+  .Our_Services{
+    height:60px ;
+    background-color:#ffffff;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+  }
+  #services{
+    margin: 10px;
+    display: flex;
+  }
+  #services .box{ 
+    border: 2px solid brown;
+    padding: 34px;
+    margin:34px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 10px;
+  }
+  
+  #services .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+  }
+  
+  #services .box p{
+    font-family: 'Bree Serif', serif;
+  
+  }
+  #Our_client{
+    height:320px;
+    width:100%;
+    justify-content: space-evenly;
+    align-items: center;
+  } 
+  #Our_client h1{
+        padding-top: 20px;
+        text-align: center;
+        font-size: 45px;
+  }
+  #Client{
+    margin-top:40px;
+    display:flex;
+    justify-content: space-evenly;
+  }
+  
+  #Our_client::before{
+    content: "";
+    position: absolute;
+    background: url('../bg1.jpg') no-repeat  center center/cover;
+    width: 100%;
+    height: 320px;
+    z-index: -1;
+    opacity: 0.3;
+  }
+  
+  .client_box img{
+    height:150px;
+  }
+  
+  .client_box img:hover{
+    background-color: blue;
+    border:2px solid white;
+    padding:2px 5px 2px;
+  }
+  #Contact::before{
+    content:"";
+    position: absolute;
+    height:600px;
+    width:100%;
+    background: url('../contact.jpg') no-repeat center center/cover ;
+    z-index: -1;
+    
+  }
+  
+  #Contact{
+    height:600px;
+    
+  }
+  #Contact h1{
+    text-align: center;
+    padding:40px  0px 40px;
+    font-size: xx-large;
+  
+  }
+  .input{
+    height:40px;
+    width:700px;
+    font-size: 20px;
+    margin: 5px 300px;
+    
+  } 
+  .contact_para{
+    font-size: 20px;
+    padding-left: 300px;
+  }
+  .message_box{
+    margin-left: 300px;
+  }
+  
+  #Contact_button{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color:#A52A2A;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+    margin-top: 15px;
+    margin-right: 100px;
+    
+  }
+  #Contact_button:hover{
+    background-color: #d1b40d;
+  }
+   
+  #suraj{
+    height:45px;
+    background-color: black;
+    color:#ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  </style>
+   <style media="screen and (max-width: 835px)">
+    .navbar{
+    height:45px;
+}
+.home{
+    padding-left: 10px;
+    font-size: 16px
+}
+.home:hover{
+    padding: 10px  5px;
+   color:black;
+   background-color:#ffffff;
+ 
+ } 
+ .logo{
+   height:20px;
+   width:20px;
+   background-color:black;
+   border:2px solid white;
+   border-radius: 100%;
+   padding-left: 10px;
+ }
+.image{
+  height:370px;
+  
+}
+.image h1{
+  font-family: 'Bree Serif', serif;
+  color: #ffffff;
+  padding-top: 80px;
+  text-align: center;
+}
+.image p{
+  margin-top:10px;
+  color:white;
+  font-family: 'Bree Serif', serif;
+  font-size:13px;
+  text-align: center;
+}
+.button{
+  font-size: 13px;
+}
+.image::before{
+  height:370px;
+}
+
+
+.Our_Services{
+  margin-top: 10px;
+  height:30px ;
+  font-size: small;
+}
+#services{
+  flex-direction: column;
+}
+#services .box{ 
+  padding: 14px;
+  margin: 2px 0px; 
+  margin-bottom: 10px;
+
+}
+
+#Our_client{
+  height:220px;
+  width:100%;
+  justify-content: space-evenly;
+  align-items: center;
+} 
+#Our_client h1{
+      padding-top: 20px;
+      text-align: center;
+}
+#Client{
+  flex-wrap: wrap;
+}
+.client_box img{
+  height:60px;
+}
+
+
+
+#Contact{
+  height:500px;
+}
+#Contact h1{
+  padding:25px  0px 10px;
+  font-size:large;
+
+}
+.input{
+  height:20px;
+  width:200px;
+  margin: 5px 100px; 
+} 
+.contact_para{
+  padding-left: 100px;
+}
+.message_box{
+  margin-left: 100px;
+}
+
+#Contact_button{
+  padding: 3px 10px;
+  border: 2px solid white;
+  font: size 18px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: 150px;
+  
+}
+#Contact::before{
+  height:500px;
+}
+
+
+
+   </style>
+</head>
+<body>
+    <header>
+        <div class = navbar>
+             <div class = logo></div>
+           <a class = "home" href="Home">Home</a>
+           <a class = "home" href="Service">Service</a>
+           <a  class = "home" href="Our Client">Our Client</a>
+           <a class = "home" href="Contact us">Contact us</a>
+        </div>
+    </header>
+    <div class = image>
+        <h1>Welcome to MyOnlineMeal</h1>
+        <p>Satisfy your hunger pangs without leaving your home with our food delivery service. Indulge in our extensive menu</p>
+        <p>of restaurant-quality dishes and enjoy the convenience of having them delivered to your doorstep.</p>
+        <p>Order now and taste our delicious cuisine delivered to you. </p>
+        <button class = "button">Order now</button>
+    </div>
+    <div class = "Our_Services">
+        <h1>Our Services</h1>
+    </div>
+    <div id = "services">
+        <div class = "box">
+            <img src="1.png" alt="">
+            <h1>Food Catering</h1>
+            <p>Take your event to the next level with our food catering service. Our experienced chefs will prepare a mouth-watering menu that will impress your guests. From corporate events to weddings, we'll deliver the best quality food to your location, leaving a lasting impression on everyone in attendance.</p>
+        </div>
+        <div class = "box">
+            <img src="2.png" alt="">
+            <h1>Bulk Ordering</h1>
+            <p>Whether you're feeding a large group or stocking up for the week, our bulk ordering service has got you covered. Choose from our extensive menu of delicious dishes and enjoy the convenience of having it delivered straight to your door. Perfect for busy families and office lunches.</p>
+        </div>
+        <div class = "box">
+            <img src="3.png" alt="">
+            <h1>Food Ordering</h1>
+            <p>Enjoy your favorite dishes from the comfort of your own home with our food ordering service. With a wide selection of cuisines to choose from, we've got something to satisfy every craving. Plus, with easy online ordering and quick delivery, satisfying your hunger has never been easier.</p>
+        </div>
+    </div>
+    <div id = "Our_client">
+        <h1>Our Client</h1>
+    <div id = "Client">
+        <div class = "client_box">
+            <img src="logo1.png" alt="">
+        </div>
+        <div class = "client_box">
+            <img src="logo2.png" alt="">
+        </div>
+        <div class = "client_box">
+            <img src="logo3.png" alt="">
+        </div>
+        <div class = "client_box">
+            <img src="logo4.png" alt="">
+        </div>
+     </div>
+    </div>
+
+    <footer>
+        <div id = "Contact">
+        <h1>Contact Us</h1>
+        <p class = "contact_para">Name:</p>
+        <input type="text"  class = "input" placeholder="Enter the name">
+        <p class = "contact_para">Email:</p>
+        <input type="text"  class = "input" placeholder="Enter the Email">
+        <p class = "contact_para">Phone Number:</p>
+        <input type="text"  class = "input" placeholder = "Enter the Phone Number">
+        <p class = "contact_para">Message:</p>
+        <textarea  class = "message_box" name="message" id="message" cols="30" rows="10"></textarea>
+        <button id = "Contact_button">Submit</button>
+     </div>
+     <div id = "suraj"><h3> *** Created  by  Suraj  Kumar  Chaubey  ***</h3></div>
+    </footer>
+
+   
+</body>
+
+</html>
